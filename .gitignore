@@ -27,5 +27,3 @@ yarn-error.log*
 provisioning/plugins/provisioning-plugins.yaml
 service_account.json
 scripts/system.token
-
-*cloud-features-v*.tgz

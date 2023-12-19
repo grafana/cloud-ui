@@ -4,24 +4,10 @@ This package contains shared UI components.
 
 ## Installation
 
-Add a new registry in the `.yarnrc.yml` (create one if it doesn't exist):
-
-```yml
-npmScopes:
-  grafana-cloud:
-    npmRegistryServer: 'https://us-npm.pkg.dev/grafanalabs-dev/cloud-npm-dev/'
-```
-
-Authenticate to the artifact registry:
-
-```bash
-npx google-artifactregistry-auth
-```
-
 Add the package:
 
 ```bash
-yarn add @grafana-cloud/ui
+yarn add @grafana-cloud-ui
 ```
 
 ## Usage

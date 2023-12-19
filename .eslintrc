@@ -1,3 +1,52 @@
 {
-  "extends": ["../../.config/.eslintrc"]
-}
+    "extends": ["./.config/.eslintrc", "plugin:jsx-a11y/strict", "plugin:import/recommended"],
+    "plugins": ["import", "jsx-a11y"],
+    "settings": {
+      "import/internal-regex": "^((feature)|(img)|(@grafana))/?",
+      "import/external-module-folders": ["node_modules", ".yarn"],
+      "import/parsers": {
+        "@typescript-eslint/parser": [".ts", ".tsx"]
+      },
+      "import/resolver":{
+        "typescript": {}
+      }
+    },
+    "rules": {
+      "import/no-useless-path-segments": "error",
+      "import/no-default-export": "error",
+      "no-restricted-imports": [
+        "error"
+      ],
+      "import/order": [
+        "error",
+        {
+          "groups": [["builtin", "external"], "internal", "parent", "sibling", "index"],
+          "newlines-between": "always",
+          "pathGroups": [
+            {
+              "pattern": "@grafana/**",
+              "group": "internal",
+              "position": "before"
+            }
+          ],
+          "alphabetize": { "order": "asc" }
+        }
+      ],
+      "no-multiple-empty-lines": 2,
+      "react-hooks/exhaustive-deps": "error",
+      "react/prop-types": "off",
+  
+      "import/no-unused-modules": [
+        "warn",
+        {
+          "ignoreExports": ["./src/*.ts"],
+          "unusedExports": true,
+          // Set to `false` because it will default to `true` in the
+          // next major version: https://github.com/benmosher/eslint-plugin-import/issues/1324
+          // But there are many cases where having no exports makes sense - test
+          // files, config files, global type declarations, etc.
+          "missingExports": false
+        }
+      ]
+    }
+  }

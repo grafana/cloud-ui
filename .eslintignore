@@ -14,5 +14,3 @@ package
 .eslintcache
 artifacts
 .yarn
-
-src/api/GrafanaComApiEndpoints.ts
