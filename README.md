@@ -7,7 +7,7 @@ This package contains shared UI components.
 Add the package:
 
 ```bash
-yarn add @grafana-cloud-ui
+yarn add @grafana/cloud-ui
 ```
 
 ## Usage
