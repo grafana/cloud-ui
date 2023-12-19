@@ -15,7 +15,7 @@ yarn add @grafana-cloud-ui
 ### Alert usage example
 
 ```JSX
-import { Alert } from '@grafana-cloud/ui';
+import { Alert } from '@grafana/cloud-ui';
 
 <Alert status="error">
   Error when creating private data source connect
