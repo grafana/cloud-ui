@@ -1,0 +1,31 @@
+# IDEs
+.idea
+.run
+.vscode
+
+# App-specifics
+.build-cache
+.cache
+coverage
+dist
+node_modules
+package
+.eslintcache
+artifacts
+.yarn
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+.DS_Store
+
+# Prevent commiting API keys to repo
+provisioning/plugins/provisioning-plugins.yaml
+service_account.json
+scripts/system.token
+
+*cloud-features-v*.tgz
