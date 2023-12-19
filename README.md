@@ -12,7 +12,7 @@ yarn add @grafana-cloud-ui
 
 ## Usage
 
-### Alert esage example
+### Alert usage example
 
 ```JSX
 import { Alert } from '@grafana-cloud/ui';
